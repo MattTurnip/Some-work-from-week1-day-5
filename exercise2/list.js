@@ -11,7 +11,7 @@ var list = []
 module.exports = {
     
     
-    listAddFunc: function addToList(num) {
+    listAddFunc: function (num) {
         list.push(num);
         return list;
     },
@@ -20,7 +20,7 @@ module.exports = {
         list.sort(function(a, b) {
             return a - b;
           });
-        console.log(list);
+        return list;
     }
     
 }
